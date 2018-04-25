@@ -15,7 +15,7 @@ module.exports = {
   },
 
   treeForVendor(vendorTree) {
-    var draggablePath = path.dirname(require.resolve('@shopify/draggable/lib/draggable.bundle.legacy.js'));
+    var draggablePath = path.dirname(require.resolve('@shopify/draggable/lib/es5/draggable.bundle.legacy.js'));
     var draggableTree = new Funnel(draggablePath, {
       files: ['draggable.bundle.legacy.js']
     });
